@@ -25,7 +25,6 @@ flatpickr('#datetime-picker', {
     const intervalDifferent = setInterval(() => {
       timeDifference = selectedDates[0] - new Date();
       console.log('timeDifference', timeDifference);
-      generalDate = selectedDates[0];
       if (timeDifference < 0) {
         Notiflix.Notify.warning('Please choose a date in the future');
         clearInterval(intervalDifferent);
